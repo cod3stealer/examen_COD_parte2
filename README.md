@@ -12,9 +12,9 @@ Ahora desde una terminal hacemos un `git clone URLrepositorioClonado` para tener
 Para crear un git ignore voy a lanzar el comando `touch .gitignore` seguido de `nano .gitignore`
 para ir metiendo la ruta de los archivos que no quiero que se suban al repositorio.
 
-Como hay que añadir un proyecto a mayores de Java hecho de antes, lo lógico es que se suba el compilado ejecutable
-y no el código fuente por ejemplo. Yo lo que hago es pegar la ruta de la carpeta del programa en el *.gitignore*
-pero dejo fuera el resto para que sí que se suba el ejecutable.
+Como hay que añadir un proyecto a mayores de Java hecho de antes, dentro de la ruta del programa creo 
+el archivo *.gitignore* y dentro de este pongo ciertas rutas que no quiero que se suban 
+pero dejo fuera el resto para que sí que se suba el ejecutable, por ejemplo.
 
 La ruta del .gitignore estará dentro del propio programa de Java.
 
