@@ -16,6 +16,8 @@ Como hay que añadir un proyecto a mayores de Java hecho de antes, lo lógico es
 y no el código fuente por ejemplo. Yo lo que hago es pegar la ruta de la carpeta del programa en el *.gitignore*
 pero dejo fuera el resto para que sí que se suba el ejecutable.
 
+La ruta del .gitignore estará dentro del propio programa de Java.
+
 ## 3 Cómo crear un ejecutable con IntelliJIDEA
 Para crear un ejecutable es necesario ir al IDE y desde allí entrar a **Project Structure** desde donde iremos a
 `artifacts > + > nuestro programa > OK`. Una vez hecho esto, se generará una carpeta en *./out* que contendrá
@@ -24,4 +26,14 @@ el ejecutable dentro de una carpeta del mismo nombre del proyecto.
 Este ejecutable se puede lanzar con el comando `java -jar NombreArchivo.jar`
 
 ## 4 Subir el .jar al repositorio remoto
+
+Una vez hecho todo esto, ejecuto los siguientes comandos.
+```
+1. git init
+2. git add .
+3. git branch -M main
+4. git remote add origin URLRepositorio
+5. git commit -m "commit"
+6. git push -u origin main
+```
 
